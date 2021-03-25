@@ -1,0 +1,32 @@
+PAGINATION HELPER
+PaginationHelper  used for implementation of pagination UI components and a set of Unit tests to properly test it.
+
+TECHNOLOGIES
+-Java 8
+-Junit5 (junit.jupiter v5.8.0)
+
+COMPONENTS OF PAGINATION HELPER
+!! Zero Base Indexes!!
+
+-Pagination Constructor :
+ PaginationHelper(char[], int) :  Takes 2 parameters
+    -items:char[]
+    -itemsPerPage:int
+
+-itemCount():int : returns counts of entire items
+-pageCount():int : returns how many pages can be returns according to itemCount
+-pageIndex(int):int : determines what page an item is on.
+-pageItemCount(int):int : returns the number of items on the current page.
+
+HOW TO TEST
+-In the project under the test folder>java> create a test class.java
+-Call you object from PaginationHelper in the test class
+-Use @Test annotations from junit.jupiter
+-Assertion use static imports from jupiter junit
+    import static org.junit.jupiter.api.Assertions.assertEquals;
+    import static org.junit.jupiter.api.Assertions.assertNotEquals;
+
+
+
+
+
